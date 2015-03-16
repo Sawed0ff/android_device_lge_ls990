@@ -24,8 +24,18 @@ BOARD_BLUEDROID_VENDOR_CONF := device/lge/ls990/bluetooth/vnd_g3.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/ls990/bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
 
+# Compiler flags
+#TARGET_GCC_VERSION_EXP := 4.8
+TARGET_USE_PIPE := true
+#ENABLE_MODULAR_O3 := true
+SUPPRES_UNUSED_WARNING := true
+KRAIT_TUNINGS := true
+ENABLE_GCCONLY := true
+GRAPHITE_OPTS := true
+#STRICT_ALIASING2 := true
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_ls990_defconfig
+TARGET_KERNEL_CONFIG := sawed0ff_ls990_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := 4.10-sm/bin/arm-eabi-
 TARGET_REQUIRES_BUMP := true
 
 # Partitions
